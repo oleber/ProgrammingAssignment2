@@ -1,7 +1,6 @@
 ## Calculats and caches the inverse of an matrix
 
-## converts a Matrix in an objec that is able of caching the inverse when calculated via cacheSolve
-
+## Converts a Matrix x in an object that is able of caching the inverse when calculated via cacheSolve
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
     set <- function(y) {
@@ -20,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Calculate and caches the inverse of the CacheMatrix x (matrix wraped via makeCacheMatrix). If the result is not on x cache,
+## Calculate and caches the inverse of the CacheMatrix x (matrix wrapped via makeCacheMatrix). If the result is not on x cache,
 ## the result is calculated, cached in x and returned. If the result is on x cache, the result is served from the cache. 
 ## Remember: Calling set on x will clean the cache.
 ## return: the inverse of x
